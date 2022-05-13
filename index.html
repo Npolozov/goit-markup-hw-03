@@ -19,7 +19,7 @@
     <!-- Шапка -->
     <header>
       <div class="conteiner main-nav">
-        <nav>
+        <nav class="navigator">
           <a href="./index.html" class="logo"
             ><span class="logo-accent">Web</span>Studio</a
           >
@@ -92,10 +92,16 @@
       <section class="section">
         <div class="conteiner">
           <h2 class="about-title">Чем мы занимаемся</h2>
-          <ul class="list">
-            <li><img src="./images/img1.jpg" alt="комп" width="370" /></li>
-            <li><img src="./images/img2.jpg" alt="телефон" width="370" /></li>
-            <li><img src="./images/img3.jpg" alt="планшет" width="370" /></li>
+          <ul class="flex-nav list">
+            <li class="item">
+              <img src="./images/img1.jpg" alt="комп" width="370" />
+            </li>
+            <li class="item">
+              <img src="./images/img2.jpg" alt="телефон" width="370" />
+            </li>
+            <li class="item">
+              <img src="./images/img3.jpg" alt="планшет" width="370" />
+            </li>
           </ul>
         </div>
       </section>
@@ -103,23 +109,23 @@
       <section class="about-team section">
         <div class="conteiner">
           <h2 class="title">Наша команда</h2>
-          <ul class="list">
-            <li>
+          <ul class="flex-team list">
+            <li class="item">
               <img src="./images/img(4)(1).jpg" alt="парень" width="270" />
               <h3 class="name">Игорь Демьяненко</h3>
               <p class="profession">Product Designer</p>
             </li>
-            <li>
+            <li class="item">
               <img src="./images/img(5)(1).jpg" alt="девушка" width="270" />
               <h3 class="name">Ольга Репина</h3>
               <p class="profession">Frontend Developer</p>
             </li>
-            <li>
+            <li class="item">
               <img src="./images/img(6)(1).jpg" alt="парень" width="270" />
               <h3 class="name">Николай Тарасов</h3>
               <p class="profession">Marketing</p>
             </li>
-            <li>
+            <li class="item">
               <img
                 src="./images/img(7)(1).jpg"
                 alt="парень в очках"
@@ -138,9 +144,9 @@
           ><span class="logo-accent">Web</span
           ><span class="footer-logo-accent">Studio</span></a
         >
-        <address>
+        <address class="address-navigator">
           <ul class="contact-footer list">
-            <li>
+            <li class="item">
               <a
                 href="https://goo.gl/maps/BdsSgtMAJnZPHCbD8"
                 target="_blank"
@@ -149,12 +155,12 @@
                 г. Киев, пр-т Леси Украинки, 26
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="tomail:info@devstudio.com" class="link"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="item">
               <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
             </li>
           </ul>

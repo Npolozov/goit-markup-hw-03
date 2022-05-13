@@ -15,7 +15,7 @@
     <!-- Шапка -->
     <header>
       <div class="conteiner main-nav">
-        <nav>
+        <nav class="navigator">
           <a href="./index.html" class="logo"
             ><span class="logo-accent">Web</span>Studio</a
           >
@@ -43,21 +43,23 @@
     <main>
       <section class="section">
         <h1 class="visually-hidden">Портфолио</h1>
+        <div class="conteiner flex-buttons">
+          <button type="button" class="buttons">Все</button>
+          <button type="button" class="buttons">Веб-сайты</button>
+          <button type="button" class="buttons">Приложения</button>
+          <button type="button" class="buttons">Дизайн</button>
+          <button type="button" class="buttons">Маркетинг</button>
+        </div>
         <div class="conteiner">
-          <button type="button" class="bottons one">Все</button>
-          <button type="button" class="bottons">Веб-сайты</button>
-          <button type="button" class="bottons">Приложения</button>
-          <button type="button" class="bottons">Дизайн</button>
-          <button type="button" class="bottons">Маркетинг</button>
-          <ul class="list-projects list">
-            <li>
+          <ul class="list-projects flex-element list">
+            <li class="item">
               <a href=""
                 ><img src="./images/2.1.jpg" alt="Технокряк" width="370" />
                 <h2 class="project">Технокряк</h2>
                 <p class="diction">Веб-сайт</p></a
               >
             </li>
-            <li>
+            <li class="item">
               <a href=""
                 ><img
                   src="./images/2.2.jpg"
@@ -68,7 +70,7 @@
                 <p class="diction">Дизайн</p></a
               >
             </li>
-            <li>
+            <li class="item">
               <a href=""
                 ><img
                   src="./images/2.3.jpg"
@@ -79,21 +81,21 @@
                 <p class="diction">Приложение</p></a
               >
             </li>
-            <li>
+            <li class="item">
               <a href=""
                 ><img src="./images/2.4.jpg" alt="Проект Prime" width="370" />
                 <h2 class="project">Проект Prime</h2>
                 <p class="diction">Маркетинг</p></a
               >
             </li>
-            <li>
+            <li class="item">
               <a href=""
                 ><img src="./images/2.5.jpg" alt="Проект Boxes" width="370" />
                 <h2 class="project">Проект Boxes</h2>
                 <p class="diction">Приложение</p></a
               >
             </li>
-            <li>
+            <li class="item">
               <a href=""
                 ><img
                   src="./images/2.6.jpg"
@@ -104,7 +106,7 @@
                 <p class="diction">Веб-сайт</p></a
               >
             </li>
-            <li>
+            <li class="item">
               <a href=""
                 ><img
                   src="./images/2.7.jpg"
@@ -115,14 +117,14 @@
                 <p class="diction">Дизайн</p></a
               >
             </li>
-            <li>
+            <li class="item">
               <a href=""
                 ><img src="./images/2.8.jpg" alt="Проект LAB" width="370" />
                 <h2 class="project">Проект LAB</h2>
                 <p class="diction">Маркетинг</p></a
               >
             </li>
-            <li>
+            <li class="item">
               <a href=""
                 ><img
                   src="./images/2.9.jpg"
@@ -143,9 +145,9 @@
           ><span class="logo-accent">Web</span
           ><span class="footer-logo-accent">Studio</span></a
         >
-        <address>
+        <address class="address-navigator">
           <ul class="contact-footer list">
-            <li>
+            <li class="item">
               <a
                 href="https://goo.gl/maps/BdsSgtMAJnZPHCbD8"
                 target="_blank"
@@ -154,12 +156,12 @@
                 г. Киев, пр-т Леси Украинки, 26
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="tomail:info@devstudio.com" class="link"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
+            <li class="item">
               <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
             </li>
           </ul>

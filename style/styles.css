@@ -24,7 +24,7 @@ body {
 
 .conteiner {
   /* outline: 1px solid tomato; */
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -38,17 +38,14 @@ body {
 img {
   display: block;
 }
-nav {
-  display: flex;
-  /* align-items: center; */
-}
-
-/* ul {
-  list-style: none;
-} */
 
 /* Logo */
 .main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navigator {
   display: flex;
   align-items: center;
 }
@@ -138,6 +135,7 @@ nav {
 /* страничка index.html */
 /* Hero */
 .hero-button {
+  padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -174,6 +172,7 @@ nav {
 /* peculiarities */
 .flex-conteiner {
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
 .feature-list {
@@ -206,6 +205,17 @@ nav {
 }
 
 /* About */
+
+.flex-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-nav .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .about-title {
   color: var(--text-title-color);
   margin-top: 0;
@@ -216,6 +226,16 @@ nav {
   text-align: center;
 }
 /* About team */
+
+.flex-team {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.flex-team .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .about-team .title {
   color: var(--text-title-color);
   margin-top: 0;
@@ -223,6 +243,7 @@ nav {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
+  text-align: center;
 }
 .about-team .name {
   color: var(--text-title-color);
@@ -244,7 +265,14 @@ nav {
 /* footer */
 
 .footer {
+  display: flex;
+  flex-direction: column;
   background-color: #2f303a;
+}
+
+.footer-logo {
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 .footer-logo-accent {
   color: var(--text-bottons-color);
@@ -256,6 +284,13 @@ nav {
   text-decoration: none;
   font-style: normal;
 }
+.contact-footer.item:not(:last-child) {
+  padding-bottom: 9px;
+}
+.address-navigator {
+  padding-bottom: 60px;
+}
+
 .address {
   font-style: normal;
   text-decoration: none;
@@ -264,7 +299,15 @@ nav {
   color: var(--text-bottons-color);
 }
 /* portfolio.html */
-.bottons {
+
+.flex-buttons {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.buttons {
+  padding: 6px 22px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -272,18 +315,37 @@ nav {
   letter-spacing: 0.03em;
   color: var(--text-title-color);
   cursor: pointer;
+  border: transparent;
   border-radius: 4px;
   /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12); */
   margin-top: 0;
   margin-bottom: 50px;
 }
-.bottons:hover,
-.bottons:focus {
+.buttons:hover,
+.buttons:focus {
   color: var(--text-bottons-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.flex-element {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: tomato; */
+}
+.flex-element .item {
+  margin-right: 45px;
+  margin-bottom: 30px;
+}
+
+.flex-element .item:nth-child(3n + 3) {
+  margin-right: 0;
+}
+
+.flex-element .item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 .list-projects .project {
   color: var(--text-title-color);
