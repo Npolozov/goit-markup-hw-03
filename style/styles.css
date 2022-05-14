@@ -40,10 +40,12 @@ img {
 }
 
 /* Logo */
+header {
+  border-bottom: 1px solid #ececec;
+}
 .main-nav {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .navigator {
@@ -357,22 +359,24 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.flex-element {
+.list-projects {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   /* background-color: tomato; */
 }
-.flex-element .item {
+
+.list-projects .item {
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
 }
 
-.flex-element .item:nth-child(3n + 3) {
+.list-projects .item:nth-child(3n + 3) {
   margin-right: 0;
 }
 
-.flex-element .item:nth-last-child(-n + 3) {
+.list-projects .item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 .list-projects .project {
