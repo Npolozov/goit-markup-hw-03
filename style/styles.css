@@ -6,8 +6,7 @@
 }
 
 .visually-hidden {
-  position: fixed;
-  transform: scale(0);
+  display: none;
 }
 body {
   background-color: white;
@@ -43,6 +42,7 @@ img {
 .main-nav {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 
 .navigator {
@@ -252,6 +252,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+  text-align: center;
 }
 
 .about-team .profession {
@@ -260,6 +261,7 @@ img {
   margin-bottom: 0;
   font-size: 16px;
   line-height: 1.1;
+  text-align: center;
 }
 
 /* footer */
@@ -301,11 +303,22 @@ img {
 /* portfolio.html */
 
 .flex-buttons {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.flex-buttons .item {
+  display: block;
+  margin-top: 100px;
+  margin-bottom: 0;
+  margin-right: 8px;
 }
 
+.flex-buttons .item:last-child {
+  margin-right: 0;
+}
 .buttons {
-  margin-right: 8px;
   padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
@@ -322,9 +335,6 @@ img {
   margin-bottom: 50px;
 }
 
-.buttons:last-child {
-  margin-right: 0;
-}
 .buttons:hover,
 .buttons:focus {
   color: var(--text-bottons-color);
@@ -339,8 +349,9 @@ img {
   /* background-color: tomato; */
 }
 .flex-element .item {
-  margin-right: 45px;
+  margin-right: 40px;
   margin-bottom: 30px;
+  border: 1px solid #eeeeee;
 }
 
 .flex-element .item:nth-child(3n + 3) {
@@ -352,8 +363,7 @@ img {
 }
 .list-projects .project {
   color: var(--text-title-color);
-  margin-top: 20px;
-  margin-bottom: 4px;
+  margin: 20px 24px 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -363,8 +373,8 @@ img {
 
 .list-projects .diction {
   color: var(--primary-text-color);
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 24px 20px;
+
   font-size: 16px;
   line-height: 1.8;
 }
