@@ -362,7 +362,9 @@ header {
 .list-projects {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-right: -30px;
+  margin-bottom: -30px;
+  /* justify-content: space-between; */
   /* background-color: tomato; */
 }
 
