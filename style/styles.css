@@ -245,6 +245,7 @@ header {
 }
 
 .flex-team .item {
+  background-color: var(--text-bottons-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -291,13 +292,13 @@ header {
 
 .footer-logo {
   display: block;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   color: var(--text-title-color);
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.9;
+  line-height: 1.1;
   text-decoration: none;
 }
 .footer-logo-accent {
@@ -391,7 +392,9 @@ header {
   margin-bottom: 0;
 }
 .project-title {
-  border: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   padding: 20px 24px;
 }
 
