@@ -373,13 +373,14 @@ header {
 .list-projects {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+  /* margin-right: -30px;
+  margin-bottom: -30px; */
   /* justify-content: space-between; */
   /* background-color: tomato; */
 }
 
 .list-projects .item {
+  flex-basis: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
@@ -396,6 +397,7 @@ header {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   padding: 20px 24px;
+  width: 370px;
 }
 
 .list-projects .project {
